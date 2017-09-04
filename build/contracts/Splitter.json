@@ -1,0 +1,114 @@
+{
+  "contract_name": "Splitter",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "kill",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver1",
+          "type": "address"
+        },
+        {
+          "name": "receiver2",
+          "type": "address"
+        }
+      ],
+      "name": "splitBalance",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "balance1",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "balance2",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "balance3",
+          "type": "uint256"
+        }
+      ],
+      "name": "logBalance",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60008054600160a060020a03191633600160a060020a03161790555b5b6102708061003c6000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166341c0e1b581146100535780638da5cb5b1461007a578063fed42cdc146100a9575b600080fd5b341561005e57600080fd5b6100666100d7565b604051901515815260200160405180910390f35b341561008557600080fd5b61008d610104565b604051600160a060020a03909116815260200160405180910390f35b610066600160a060020a0360043581169060243516610113565b604051901515815260200160405180910390f35b6000805433600160a060020a039081169116146100f357600080fd5b600054600160a060020a0316ff5b90565b600054600160a060020a031681565b60003334828082151561012557600080fd5b6002835b04915050600281028203600160a060020a03871682156108fc0283604051600060405180830381858888f19350505050151561016457600080fd5b600160a060020a03861682156108fc0283604051600060405180830381858888f19350505050151561019557600080fd5b60008111156101cf57600160a060020a03841681156108fc0282604051600060405180830381858888f1935050505015156101cf57600080fd5b5b7fe982f314cd1dc39a84e3a80cf58fbcbd124d797853c6130354a07725e9e4036b84600160a060020a03163188600160a060020a03163188600160a060020a03163160405180848152602001838152602001828152602001935050505060405180910390a1600194505b50505050929150505600a165627a7a723058204d217c210e843cbdce5905dce84b395e79b4adef497f49a8d97585104fa3936c0029",
+  "networks": {
+    "42": {
+      "events": {
+        "0xe982f314cd1dc39a84e3a80cf58fbcbd124d797853c6130354a07725e9e4036b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "balance1",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "balance2",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "balance3",
+              "type": "uint256"
+            }
+          ],
+          "name": "logBalance",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xff46c4d348eea22ba6d7ac4221765f1d6a373739",
+      "updated_at": 1504553736978
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1504553736978
+}
